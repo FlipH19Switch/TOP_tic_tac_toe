@@ -8,6 +8,35 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
-    
+    <button class="open-dialog">
+        Start Game
+    </button>
+    <dialog class="dialog" id="dialog">
+        <p>PLAYER DETAILS</p>
+        <form method="dialog">
+            <div>
+                <label for="player_one">PLAYER ONE (X)</label>
+                <input type="text" id="player_one" name="player_one" required>
+            </div>
+            <div>
+                <label for="player_two">PLAYER ONE (O)</label>
+                <input type="text" id="player_two" name="player_two" required>
+            </div>
+            <button type="submit" class="add-players">
+                Add Player Details
+            </button>
+        </form>
+    </dialog>
+    <div class="container">
+        <div class="game-square" square-array-index="0"></div>
+        <div class="game-square" square-array-index="1"></div>
+        <div class="game-square" square-array-index="2"></div>
+        <div class="game-square" square-array-index="3"></div>
+        <div class="game-square" square-array-index="4"></div>
+        <div class="game-square" square-array-index="5"></div>
+        <div class="game-square" square-array-index="6"></div>
+        <div class="game-square" square-array-index="7"></div>
+        <div class="game-square" square-array-index="8"></div>
+    </div>
 </body>
 </html>
